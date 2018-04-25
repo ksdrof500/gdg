@@ -1,0 +1,21 @@
+extends ../layouts/default
+
+block content
+	.container: .jumbotron
+		img(src='/images/costas.png', width='400')
+		h1 Bem vindo
+		p Este site é dedicado ao <a href='http://google.com' target='_blank'>GDG</a>.
+		p Inclui as versões mais recentes de
+			| <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
+			| e <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
+		hr
+		if user && user.canAccessKeystone
+			p
+				a(href='/keystone').btn.btn-lg.btn-primary Ir para Admin
+		else
+			p Nós criamos um usuário Admin padrão para você com o email <strong>filipenunes.developer@gmail.com</strong> e sua senha<strong>admin</strong>.
+			p
+				a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
+				|  Entrar no Admin.
+	
+	
