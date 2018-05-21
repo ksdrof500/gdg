@@ -18,6 +18,7 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'pug',
+    'cloudinary config': 'cloudinary://228861679177893:A421O2kc2chNY9GX-1j6n05EPmI@dkex0uzkk',
 
 	'emails': 'templates/emails',
 
